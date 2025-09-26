@@ -35,7 +35,11 @@
 
 header
 {
- background-color: #333333;
+ background-color:black;
+position: fixed;
+width: 100%;
+z-index: 5%;
+
 }
 .navbar .nav-logo .logo-text
 {
@@ -77,3 +81,82 @@ header .navbar
     display :flex;
     gap:10px;
 }
+
+.hero-section
+{
+    min-height: 100vh;
+    background-color: black;
+}
+.hero-section .section-content {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 30px;                    
+    color: #f5f5f5;
+}
+
+.hero-section .hero-details
+{
+    max-width: 600px;
+}
+
+.hero-section .hero-details .title
+{
+    font-size: x-large;
+    color: rgb(183, 74, 49);
+    font-family: "Miniver" , sans-serif;
+}
+.hero-section .hero-details .subtitle
+{
+    font-size:medium;
+    color: white;
+    font-weight: 100;
+    
+   
+}
+.hero-section .hero-details .description
+{
+    font-size:small;
+    color: white;
+    font-weight: 100;
+    font-family:  sans-serif;
+   margin: 24px 0px 40px;
+}
+.hero-details .buttons .button-get-started {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: white;
+    padding: 6px 16px;
+    background-color: rgb(124, 37, 17);
+    border-radius: 50px;
+    border: 2px solid transparent;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.hero-details .buttons .button-get-started:hover {
+    background-color: rgb(150, 50, 25);
+    border-color: white;
+    cursor: pointer;
+}
+
+
+/* Hero Image Wrapper */
+.hero-section .hero-img-wrapper {
+    width: 500px;       /* desired width of the image */
+    height: 300px;      /* desired height of the image */
+    flex-shrink: 0;     /* prevents shrinking in flex layout */
+    margin-left: 20px;  /* space from text */
+}
+
+.hero-section .hero-img-wrapper img {
+    width: 100%;        /* scale to fit wrapper width */
+    height: 100%;       /* scale to fit wrapper height */
+    object-fit: cover;  /* maintain aspect ratio and fill box */
+    border-radius: 12px;
+}
+
+
+
+
