@@ -88,6 +88,7 @@ header .navbar
     background-color: black;
 }
 .hero-section .section-content {
+
     display: flex;
     min-height: 100vh;
     align-items: center;
@@ -144,9 +145,10 @@ header .navbar
 
 /* Hero Image Wrapper */
 .hero-section .hero-img-wrapper {
-    width: 100%;
-  max-width: 1200px; /* optional max size */
-  margin: 0 auto;  /* space from text */
+    width: 500px;       /* desired width of the image */
+    height: 300px;      /* desired height of the image */
+    flex-shrink: 0;     /* prevents shrinking in flex layout */
+    margin-left: 20px;  /* space from text */
 }
 
 .hero-section .hero-img-wrapper img {
