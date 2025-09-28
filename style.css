@@ -145,7 +145,7 @@ header .navbar
 
 /* Hero Image Wrapper */
 .hero-section .hero-img-wrapper {
-    width: 500px;       /* desired width of the image */
+    width: 700px;       /* desired width of the image */
     height: 300px;      /* desired height of the image */
     flex-shrink: 0;     /* prevents shrinking in flex layout */
     margin-left: 20px;  /* space from text */
