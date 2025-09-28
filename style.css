@@ -1,0 +1,160 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+:root {
+    /* Colors */
+    --primary-color: #ff6f61;      /* Main brand color */
+    --secondary-color: #333333;    /* Text or accent color */
+    --background-color: #f5f5f5;   /* Page background */
+    --accent-color: #ffd700;  
+    --white-color: white;     /* Highlights/buttons */
+
+    /* Font sizes */
+    --font-small: 12px;
+    --font-medium: 16px;
+    --font-large: 24px;
+    --font-xlarge: 36px;
+
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+
+    /* Border radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+}
+
+
+header
+{
+ background-color:black;
+position: fixed;
+width: 100%;
+z-index: 5%;
+
+}
+.navbar .nav-logo .logo-text
+{
+    color: var(--white-color);
+}
+.navbar .nav-menu .nav-link
+{
+    color: var(--white-color);
+    padding: 10px 18px;
+    border-radius: 18px;
+    transition: 0.3s ease;
+    font-size: small;
+    font-weight: 100;
+}
+.navbar .nav-menu .nav-link:hover
+{
+color:var(--primary-color);
+background-color: rgba(94, 6, 6, 0.723);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor : pointer;
+    border: none;
+    background: none;
+}
+header .navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.navbar .nav-menu{
+    display :flex;
+    gap:10px;
+}
+
+.hero-section
+{
+    min-height: 100vh;
+    background-color: black;
+}
+.hero-section .section-content {
+
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 30px;                    
+    color: #f5f5f5;
+}
+
+.hero-section .hero-details
+{
+    max-width: 600px;
+}
+
+.hero-section .hero-details .title
+{
+    font-size: x-large;
+    color: rgb(183, 74, 49);
+    font-family: "Miniver" , sans-serif;
+}
+.hero-section .hero-details .subtitle
+{
+    font-size:medium;
+    color: white;
+    font-weight: 100;
+    
+   
+}
+.hero-section .hero-details .description
+{
+    font-size:small;
+    color: white;
+    font-weight: 100;
+    font-family:  sans-serif;
+   margin: 24px 0px 40px;
+}
+.hero-details .buttons .button-get-started {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: white;
+    padding: 6px 16px;
+    background-color: rgb(124, 37, 17);
+    border-radius: 50px;
+    border: 2px solid transparent;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.hero-details .buttons .button-get-started:hover {
+    background-color: rgb(150, 50, 25);
+    border-color: white;
+    cursor: pointer;
+}
+
+
+/* Hero Image Wrapper */
+.hero-section .hero-img-wrapper {
+    width: 500px;       /* desired width of the image */
+    height: 300px;      /* desired height of the image */
+    flex-shrink: 0;     /* prevents shrinking in flex layout */
+    margin-left: 20px;  /* space from text */
+}
+
+.hero-section .hero-img-wrapper img {
+    width: 100%;        /* scale to fit wrapper width */
+    height: 100%;       /* scale to fit wrapper height */
+    object-fit: cover;  /* maintain aspect ratio and fill box */
+    border-radius: 12px;
+}
