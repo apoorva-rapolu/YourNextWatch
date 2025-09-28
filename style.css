@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5bd65dd8c20564674c195395effee572fd4a8047
 @import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 * {
     margin: 0;
@@ -157,4 +160,12 @@ header .navbar
     height: 100%;       /* scale to fit wrapper height */
     object-fit: cover;  /* maintain aspect ratio and fill box */
     border-radius: 12px;
+<<<<<<< HEAD
 }
+=======
+}
+
+
+
+
+>>>>>>> 5bd65dd8c20564674c195395effee572fd4a8047
