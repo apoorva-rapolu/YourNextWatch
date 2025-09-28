@@ -12,11 +12,11 @@
 
 :root {
     /* Colors */
-    --primary-color: #ff6f61;      /* Main brand color */
-    --secondary-color: #333333;    /* Text or accent color */
-    --background-color: #f5f5f5;   /* Page background */
+    --primary-color: #ff6f61;     
+    --secondary-color: #333333;   
+    --background-color: #f5f5f5;  
     --accent-color: #ffd700;  
-    --white-color: white;     /* Highlights/buttons */
+    --white-color: white; 
 
     /* Font sizes */
     --font-small: 12px;
