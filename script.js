@@ -1,16 +1,22 @@
-document.getElementById('contactForm').addEventListener('submit', e => {
-  e.preventDefault();
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const subject = document.getElementById('subject').value.trim();
-  const message = document.getElementById('message').value.trim();
+var form = document.getElementById("contactForm");
 
- 
-  if (!name || !email || !subject || !message) {
-    alert('Please fill in all fields.');
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var subject = document.getElementById("subject").value;
+  var message = document.getElementById("message").value;
+
+  if (name === "" || email === "" || subject === "" || message === "") {
+    alert("Please fill in all fields.");
     return;
   }
 
-  
-  window.location.href = `mailto:you@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} <${email}>\n\n${message}`)}`;
+  var mailtoLink = "mailto:you@example.com"
+      + "?subject=" + encodeURIComponent(subject)
+      + "&body=" + encodeURIComponent("From: " + name + " <" + email + ">\n\n" + message);
+
+  window.location.href = mailtoLink;
 });
+
